@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Margins-->
+    <dimen name="space_massive">110dp</dimen>
+    <dimen name="space_huge">85dp</dimen>
+    <dimen name="space_big">45dp</dimen>
+    <dimen name="space_xmedium">36dp</dimen>
+    <dimen name="space_medium">30dp</dimen>
+    <dimen name="space_xregular">20dp</dimen>
+    <dimen name="space_xxsmall">14dp</dimen>
+    <dimen name="space_xsmall">5dp</dimen>
+    <dimen name="no_space">0dp</dimen>
+
+    <!--Fonts-->
+    <dimen name="text_size_xhuge">26sp</dimen>
+    <dimen name="text_size_regular">16sp</dimen>
+</resources>

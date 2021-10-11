@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registration.LoginFragment" >
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_medium"
+        android:layout_marginTop="@dimen/space_big"
+        android:text="@string/login_title"
+        android:textSize="@dimen/text_size_xhuge"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userTextInput"
+        android:layout_width="@dimen/no_space"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_medium"
+        android:layout_marginTop="@dimen/space_xmedium"
+        android:textColorHint="@color/blue_base"
+        app:layout_constraintStart_toStartOf="@id/titleTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userEditText"
+            android:textSize="@dimen/text_size_regular"
+            android:fontFamily="sans-serif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_user"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInput"
+        android:layout_width="@dimen/no_space"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_medium"
+        android:textColorHint="@color/blue_base"
+        app:layout_constraintStart_toStartOf="@id/userTextInput"
+        app:layout_constraintEnd_toEndOf="@id/userTextInput"
+        app:layout_constraintTop_toBottomOf="@id/userTextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:textSize="@dimen/text_size_regular"
+            android:fontFamily="sans-serif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/loginErrorTextView"
+        android:layout_width="@dimen/no_space"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xmedium"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/login_error_message"
+        android:textColor="@color/red_base"
+        android:textSize="@dimen/text_size_regular"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/userTextInput"
+        app:layout_constraintEnd_toEndOf="@id/userTextInput"
+        app:layout_constraintTop_toBottomOf="@id/passwordTextInput"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="@dimen/no_space"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_big"
+        android:text="@string/login_title"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@id/userTextInput"
+        app:layout_constraintEnd_toEndOf="@id/userTextInput"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

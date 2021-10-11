@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">PocMvvmAndroid</string>
+
+    <!--Login-->
+    <string name="login_title">Iniciar sesión</string>
+    <string name="login_user">Usuario</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_error_message">Usuario o contraseña incorrectas.\nPor favor vuelve a intentarlo.</string>
+    <string name="login_ok">Login correcto</string>
+
+    <!--Registration-->
+    <string name="registration_message">Login correcto</string>
+    <string name="login">Ir a Iniciar sesión</string>
+    <string name="enter_app">Ingresar a la aplicación</string>
+
+    <!--Main Activity-->
+    <string name="main_activity">Actividad principal</string>
+    <string name="list_products">Listar productos</string>
+
+    <string name="products">Productos</string>
+    <string name="id">ID:</string>
+    <string name="name">Nombre:</string>
+    <string name="description">Descripción:</string>
+    <string name="price">Precio unitario:</string>
+    <string name="quantity">Cantidad:</string>
+</resources>

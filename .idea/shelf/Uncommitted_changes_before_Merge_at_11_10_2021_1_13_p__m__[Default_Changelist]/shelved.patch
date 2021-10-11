@@ -1,0 +1,193 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Coderio POC MVVM app template \r\n\r\nTemplate con la arquitectura inicial para el desarrollo de aplicaciones Android bajo el patron de arquitctura MVVM.\r\n\r\n\r\n#### La app contiene los siguientes paquetes:\r\n1. **data**: Contiene todas las clases que acceden a la data y manipulacion de componentes.\r\n2. **di**: Contiene todas las dependencias proveidas utilizando Dagger2.\r\n3. **ui**: Contiene solo las clases de cada vista con su correspondiente viewmodel.\r\n4. **utils**: Clases de utilidades.\r\n\r\n#### Las clases se han diseñado de tal manera que puedan heredarse y maximizar la reutilización del código.\r\n\r\n### Referencias de librerias:\r\n1. RxJava2: https://github.com/ReactiveX/RxJava\r\n2. Dagger2: https://github.com/MindorksOpenSource/android-dagger2-example\r\n3. Retrofit: https://square.github.io/retrofit/\r\n4. PlaceHolderView: https://github.com/janishar/PlaceHolderView\r\n5. AndroidDebugDatabase: https://github.com/amitshekhariitbhu/Android-Debug-Database\r\n6. Room: https://developer.android.com/topic/libraries/architecture/room.html\r\n\r\n### Conceptos de librerias utilizadas:\r\n1. [Introduction to Dagger 2: Part 1](https://blog.mindorks.com/introduction-to-dagger-2-using-dependency-injection-in-android-part-1-223289c2a01b#.ki6nt86l6)\r\n2. [Introduction to Dagger 2: Part 2](https://blog.mindorks.com/introduction-to-dagger-2-using-dependency-injection-in-android-part-2-b55857911bcd#.mkpzyk8sa)\r\n3. [Android Dagger2: Critical things to know before you implement](https://blog.mindorks.com/android-dagger2-critical-things-to-know-before-you-implement-275663aecc3e#.bskiz1879)\r\n4. [The Best Android Networking Library for Fast and Easy Networking](https://blog.mindorks.com/simple-and-fast-android-networking-19ed860d1455#.cyzrve85o)\r\n5. [RxJava + Fast Android Networking](https://blog.mindorks.com/rxjava-fast-android-networking-6e3d90ee4387#.7hjoex22m)\r\n6. [Migrating from RxJava 1.0 to RxJava 2.0 and Learn RxJava by Examples](https://blog.mindorks.com/migrating-from-rxjava1-to-rxjava2-5dac0a94b4aa#.3lg46kora)\r\n7. [Android Tinder Swipe View Example](https://blog.mindorks.com/android-tinder-swipe-view-example-3eca9b0d4794#.u7i7jbbvy)\r\n8. [Debugging Android Databases And Shared Preferences In The Easiest Way](https://blog.mindorks.com/debugging-android-databases-and-shared-preferences-in-the-easiest-way-e5f705dfc06b#.pxw0hvnws)\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision 3d276e60f2abce6445e84f0ec36d50c83385d634)
++++ b/README.md	(date 1633969666244)
+@@ -1,4 +1,4 @@
+-# Coderio POC MVVM app template 
++# POC MVVM app template
+ 
+ Template con la arquitectura inicial para el desarrollo de aplicaciones Android bajo el patron de arquitctura MVVM.
+ 
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"PLATFORM\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleJvm\" value=\"1.8\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n        <option name=\"useQualifiedModuleNames\" value=\"true\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 3d276e60f2abce6445e84f0ec36d50c83385d634)
++++ b/.idea/gradle.xml	(date 1633787211825)
+@@ -4,7 +4,7 @@
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
+-        <option name="testRunner" value="PLATFORM" />
++        <option name="testRunner" value="GRADLE" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="gradleJvm" value="1.8" />
+@@ -15,7 +15,6 @@
+           </set>
+         </option>
+         <option name="resolveModulePerSourceSet" value="false" />
+-        <option name="useQualifiedModuleNames" value="true" />
+       </GradleProjectSettings>
+     </option>
+   </component>
+Index: .idea/codeStyles/Project.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/codeStyles/Project.xml b/.idea/codeStyles/Project.xml
+new file mode 100644
+--- /dev/null	(date 1633787513260)
++++ b/.idea/codeStyles/Project.xml	(date 1633787513260)
+@@ -0,0 +1,123 @@
++<component name="ProjectCodeStyleConfiguration">
++  <code_scheme name="Project" version="173">
++    <JetCodeStyleSettings>
++      <option name="CODE_STYLE_DEFAULTS" value="KOTLIN_OFFICIAL" />
++    </JetCodeStyleSettings>
++    <codeStyleSettings language="XML">
++      <option name="FORCE_REARRANGE_MODE" value="1" />
++      <indentOptions>
++        <option name="CONTINUATION_INDENT_SIZE" value="4" />
++      </indentOptions>
++      <arrangement>
++        <rules>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>xmlns:android</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>^$</XML_NAMESPACE>
++                </AND>
++              </match>
++            </rule>
++          </section>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>xmlns:.*</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>^$</XML_NAMESPACE>
++                </AND>
++              </match>
++              <order>BY_NAME</order>
++            </rule>
++          </section>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>.*:id</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
++                </AND>
++              </match>
++            </rule>
++          </section>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>.*:name</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
++                </AND>
++              </match>
++            </rule>
++          </section>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>name</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>^$</XML_NAMESPACE>
++                </AND>
++              </match>
++            </rule>
++          </section>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>style</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>^$</XML_NAMESPACE>
++                </AND>
++              </match>
++            </rule>
++          </section>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>.*</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>^$</XML_NAMESPACE>
++                </AND>
++              </match>
++              <order>BY_NAME</order>
++            </rule>
++          </section>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>.*</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
++                </AND>
++              </match>
++              <order>ANDROID_ATTRIBUTE_ORDER</order>
++            </rule>
++          </section>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>.*</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>.*</XML_NAMESPACE>
++                </AND>
++              </match>
++              <order>BY_NAME</order>
++            </rule>
++          </section>
++        </rules>
++      </arrangement>
++    </codeStyleSettings>
++    <codeStyleSettings language="kotlin">
++      <option name="CODE_STYLE_DEFAULTS" value="KOTLIN_OFFICIAL" />
++    </codeStyleSettings>
++  </code_scheme>
++</component>
+\ No newline at end of file
+Index: .idea/codeStyles/codeStyleConfig.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/codeStyles/codeStyleConfig.xml b/.idea/codeStyles/codeStyleConfig.xml
+new file mode 100644
+--- /dev/null	(date 1633787513270)
++++ b/.idea/codeStyles/codeStyleConfig.xml	(date 1633787513270)
+@@ -0,0 +1,5 @@
++<component name="ProjectCodeStyleConfiguration">
++  <state>
++    <option name="USE_PER_PROJECT_SETTINGS" value="true" />
++  </state>
++</component>
+\ No newline at end of file
